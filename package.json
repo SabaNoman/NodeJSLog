@@ -1,0 +1,15 @@
+{
+  "name": "nodejslog",
+  "version": "1.0.0",
+  "description": "Classwork and Assignments",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "cgexpress": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
