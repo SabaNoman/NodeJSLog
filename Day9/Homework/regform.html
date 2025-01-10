@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin:8%;">
+    <h2>REGISTRATION FORM</h2>
+
+    <p>Please enter your details:</p>
+
+    <form action="/formdata.js" target="_blank" method="post">
+    <label for="UserId">User Id:</label><br>
+    <input type="number" id="userid" name="userid"><br>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="userage">Age:</label><br>
+    <input type="number" id="userage" name="userage"><br><br>
+    <input type="submit" onclick="submitForm()" value="Submit">
+    </form>
+    </div>
+
+    <!-- <script>
+        import express from 'express';
+        import bodyParser from 'body-parser';
+        const app = express();
+
+        app.use(bodyParser.urlencoded({ extended: true }));
+
+        app.post('/formjsondata', (req, res) => {
+        const { id, name, age } = req.body;
+        console.log(`Id: ${id} Name: ${name}, Age: ${age}`);
+        res.send('Form data received!');
+    });
+
+    app.listen(3000, () => console.log('Server running on port 3000'));
+    </script> -->
+    
+</body>
+</html>
