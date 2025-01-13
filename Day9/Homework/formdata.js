@@ -7,7 +7,7 @@
 import http from 'http';
 
 const server = http.createServer((req, res) => {
-    if (req.method === 'POST' && req.url === '/formdata.js') {
+    if (req.method === 'POST' && req.url === '/') {
         let body = '';
 
         // Collect data chunks
@@ -33,3 +33,19 @@ server.listen(3000, () => {
     console.log('Server running on http://localhost:3000');
 });
 
+
+/* <script>
+import express from 'express';
+import bodyParser from 'body-parser';
+const app = express();
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/formjsondata', (req, res) => {
+const { id, name, age } = req.body;
+console.log(`Id: ${id} Name: ${name}, Age: ${age}`);
+res.send('Form data received!');
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));
+</script> */
