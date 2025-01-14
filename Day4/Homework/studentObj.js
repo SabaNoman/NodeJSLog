@@ -17,7 +17,7 @@ let students = [
 students.map(stud => {
     console.log(stud.stname);
     stud.subjects.forEach(element => {
-        let [subject, marks] = element;
+        let [subject, marks] = element; //Array destructuring
         console.log(`${subject.sn}: ${marks.marks}`)
     });
 })

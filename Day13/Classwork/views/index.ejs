@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head'); %>
+</head>
+<body>
+    <h1>HELLO WORLD</h1>
+
+    <h2>EJS</h2>
+    <p><%= tagline %></p>
+
+    <ul>
+      <% mascots.forEach(function(mascot) { %>
+        <li>
+          <strong><%= mascot.name %></strong>
+          representing <%= mascot.organization %>,
+          born <%= mascot.birth_year %>
+        </li>
+      <% }); %>
+    </ul>
+</body>
+</html>

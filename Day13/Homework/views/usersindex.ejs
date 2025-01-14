@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head'); %>
+</head>
+<body>
+    <h1>USER INFO</h1>
+    <ul>
+      <% data.forEach(function(arg) { %>
+        <li>
+          <strong><%= arg.id %></strong>
+          <%= arg.name %>,
+          <%= arg.age %>
+        </li>
+      <% }); %>
+    </ul>
+</body>
+</html>
