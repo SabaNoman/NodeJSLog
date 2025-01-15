@@ -35,8 +35,10 @@ app.get('/users', function(req, res) {
     ];
     
     const userId = parseInt(req.params.id);
+    console.log(req.params.id)
     const user = users.find((u) => u.id === userId);
-    console.log(user.id)
+    console.log("hello")
+    console.log(user)
     
     if (!user) {
       res.status(404).json({error: 'User Id is incorrect'})
@@ -46,10 +48,8 @@ app.get('/users', function(req, res) {
         res.status(403).json({error: "User is under 18. Access denied."})
     }
 
-    // res.json(user);
-
     res.render('usersindex', {
-     data:user
+     data:[user] //Wrapped the user object in an array so that it works on the forEach loop
     });
 
   });
