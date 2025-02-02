@@ -1,3 +1,4 @@
+//Testing Post using Thunderclient
 import express from 'express'
 const app = express();
 const port= 3000;
@@ -16,6 +17,7 @@ app.post("/data", (req, res) => {
         res.status(400).json({error: "Fields are required"})
     }
 
+    // res.send("cool") //Wanted to check successful submission msg using send
     res.status(200).json(
         {
             message: "Form successfully submitted", 

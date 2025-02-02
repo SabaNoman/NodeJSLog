@@ -1,5 +1,5 @@
-// Assignment - Create file using fs file system also read 
-// and write the specific amount of data using start and end into another file.
+// Assignment - Create file using fs file system also read and write the specific amount of data 
+// using start and end into another file.
 // Serve the static file html into http create server
 
 import fs from 'fs';

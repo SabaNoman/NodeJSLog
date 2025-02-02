@@ -1,7 +1,7 @@
 div {
-    background-color: lightgrey;
+    background-color: rgb(203, 233, 237);
     width: 800px;
-    border: 10px solid rgb(128, 0, 58);
+    border: 10px solid rgb(7, 45, 71);
     padding: 50px;
     margin: 10px;
   }
